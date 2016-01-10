@@ -87,7 +87,9 @@ fclean: clean
 	@echo "\nWow ! Student clean it so much !\n"
 
 test: re
-	@./$(NAME) 1
+	@./$(NAME) 21 > ./../fillit/Test
+	@echo "\n\n\t[DEBUT DU TEST]"
+	@(cd ./../fillit && $(MAKE) $@)
 	@(cd ./ && $(MAKE) fclean)
 
 norme:

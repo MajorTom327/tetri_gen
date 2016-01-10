@@ -1,1 +1,3 @@
-./lib/libft
+./lib/libft/*
+./obj
+./tetri_gen
